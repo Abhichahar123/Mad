@@ -1,4 +1,4 @@
-package com.example.mad; // <<< change package
+package com.example.studentattendence;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com.example.studentattendence; // <<< CHANGE this to your actual package name
+package com.example.studentattendence;
 
 import android.content.Intent;
 import android.os.Bundle;

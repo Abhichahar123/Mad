@@ -1,4 +1,4 @@
-package com.example.mad; // <<< change package
+package com.example.studentattendence;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -38,7 +38,6 @@ public class ScanQRCodeActivity extends AppCompatActivity {
             if (result.getContents() == null) {
                 Toast.makeText(this, "Cancelled", Toast.LENGTH_SHORT).show();
             } else {
-                // Got QR data
                 String qrData = result.getContents();
                 saveAttendance(qrData);
             }
@@ -48,7 +47,6 @@ public class ScanQRCodeActivity extends AppCompatActivity {
     }
 
     private void saveAttendance(String data) {
-        // Expected format: "subject|timestamp"
         String[] parts = data.split("\\|");
         String subject = parts.length > 0 ? parts[0] : "Unknown";
         String timestamp = parts.length > 1 ? parts[1] : String.valueOf(System.currentTimeMillis());

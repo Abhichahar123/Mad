@@ -1,4 +1,4 @@
-package com.example.mad; // <<< change package
+package com.example.studentattendence;
 
 import android.os.Bundle;
 import android.widget.TextView;

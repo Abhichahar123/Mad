@@ -1,4 +1,4 @@
-package com.example.mad; // <<< change package
+package com.example.studentattendence;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -36,7 +36,6 @@ public class GenerateQRCodeActivity extends AppCompatActivity {
                 return;
             }
 
-            // encode subject + timestamp
             String data = subject + "|" + System.currentTimeMillis();
             Bitmap bmp = generateQRCode(data);
             if (bmp != null) {
